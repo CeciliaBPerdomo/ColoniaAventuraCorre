@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import carrera from "../../img/lacarrera-delcac.jpg"
 
 export const Novedades = () => {
-	return (
+ 	return (
 		<>
 			<div className="container">
                 <div className="row">
@@ -28,14 +28,17 @@ export const Novedades = () => {
 
                         <br />
                         
-                        <button type="button" 
-                            className="btn btn-outline-light w-50 rounded-pill opacity-75 float-end"
-                            style={{
-                                background: "#2F2483",
-                                fontSize: "18px"
-                            }}>
-                            Suscribite
-                        </button>
+                        <Link to="/suscripcion" 
+                            style={{textDecoration: "none", color: "white"}}>
+                            <button type="button" 
+                                className="btn btn-outline-light w-50 rounded-pill opacity-75 float-end"
+                                style={{
+                                    background: "#2F2483",
+                                    fontSize: "18px"
+                                }}>
+                                Suscribite
+                            </button>
+                        </Link>
                     </div>
                 </div>
             </div>

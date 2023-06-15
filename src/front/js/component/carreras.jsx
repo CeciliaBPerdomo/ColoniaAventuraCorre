@@ -1,11 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import cross from "../../img/7cross.jpg"
 import elreto from "../../img/elreto.png"
 import desafioScott from "../../img/desafioScott.jpg"
 
 
 export const Carreras = () => {
+
+    const pagina = () => {
+        window.location.replace("https://encarrera.uy/la-carrera-cac")
+    }
+
 	return (
 		<>
 			<div className="container">
@@ -33,9 +37,9 @@ export const Carreras = () => {
                                 </p>
                             </div>
                             <div className="card-footer d-flex justify-content-center">
-                                {/* <a href="https://encarrera.uy/la-carrera-cac"> */}
                                     <button type="button" 
                                         className="btn btn-outline-light w-50 rounded-pill opacity-75"
+                                        onClick={pagina}
                                         style={{
                                             background: "#2F2483",
                                             fontSize: "18px"

@@ -8,40 +8,52 @@ export const Navbar = () => {
 			<div className="container" 
 				style={{marginTop: "25px"}}
 			>
-				<div class="container text-center">
-  					<div class="row">
-    					<div class="col">
-							<img src={logo} 
-								style={{
-									width: "250px"
-								}}/>
+				<div className="container text-center">
+  					<div className="row">
+    					<div className="col">
+							<Link to="/" 
+								style={{textDecoration: "none", color: "white"}}>
+								<img src={logo} 
+									style={{
+										width: "250px"
+									}}/>
+							</Link>
     					</div>
     					
-						<div class="col"></div>
+						<div className="col"></div>
 
-						<div class="col">
+						<div className="col">
 							<div className="d-flex justify-content-end">
-								<button type="button" 
-								className="btn btn-outline-light w-50 rounded-pill opacity-50"
-								style={{
-									background: "#2F2483",
-									fontSize: "18px", 
-									marginTop: "5px",
-									marginBottom: "12px"
-									}}>
-									Registrarse
-								</button>
+								<Link to="/registro" 
+									style={{textDecoration: "none", color: "white"}}>
+									<button type="button" 
+									className="btn btn-outline-light rounded-pill opacity-50"
+									style={{
+										background: "#2F2483",
+										fontSize: "18px", 
+										marginTop: "5px",
+										marginBottom: "12px",
+										width: "220px"
+										}}>
+										Registrarse
+									</button>
+								</Link>
 							</div>
 							
 							<div className="d-flex justify-content-end">
-								<button type="button" 
-								className="btn btn-outline-light w-50 rounded-pill opacity-50"
-								style={{
-									background: "#2F2483",
-									fontSize: "18px"
-									}}>
-									Iniciar sesión
-								</button>
+								<Link to="/inicio" 
+									style={{textDecoration: "none", color: "white"}}>
+									
+									<button type="button" 
+									className="btn btn-outline-light rounded-pill opacity-50"
+									style={{
+										background: "#2F2483",
+										fontSize: "18px",
+										width: "220px"
+										}}>
+										Iniciar sesión
+									</button>
+								</Link>
 							</div>
 						</div>
   					</div>

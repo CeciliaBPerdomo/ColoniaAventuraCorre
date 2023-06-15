@@ -12,6 +12,9 @@ import { Footer } from "./component/footer";
 
 // Carreras
 import { Carreras } from "./component/carreras.jsx";
+import { Suscripciones } from "./component/suscripciones.jsx";
+import { Registrarse } from "./component/registrarse.jsx"
+import { InicioSesion } from "./component/inicio.jsx";
 
 //create your first component
 const Layout = () => {
@@ -26,8 +29,9 @@ const Layout = () => {
                     <Navbar />
                     <Routes>
                         <Route element={<Home />} path="/" />
-                        <Route element={<Demo />} path="/demo" />
-                        <Route element={<Single />} path="/single/:theid" />
+                        <Route element={<Suscripciones />} path="/suscripcion" />
+                        <Route element={<Registrarse />} path="/registro" />
+                        <Route element={<InicioSesion />} path="/inicio" />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     <Footer />
