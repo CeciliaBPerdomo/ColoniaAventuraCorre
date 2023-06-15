@@ -5,7 +5,7 @@ export const Registrarse = () => {
     return (
         <>
             <div className="container">
-                <div className="card border-primary mb-3">
+                <div className="card border-primary mb-3" style={{marginTop: "35px"}}>
                     <h3 style={{marginTop: "20px", marginLeft: "5px"}}>Complete con sus datos: </h3>
                    
                     {/* Nombre */}
@@ -90,6 +90,8 @@ export const Registrarse = () => {
 
                     <div className="row g-3 align-items-center" style={{marginTop: "20px", marginLeft: "15px"}}>
                         <div className="d-flex justify-content-end">
+                            <Link to="/perfil" 
+							style={{textDecoration: "none", color: "white"}}>
 							<button type="button" 
 							    className="btn btn-outline-light rounded-pill"
 								style={{
@@ -102,6 +104,7 @@ export const Registrarse = () => {
 								}}>
 								Registrarse
 							</button>
+                            </Link>
 						</div>
                     </div>
 
