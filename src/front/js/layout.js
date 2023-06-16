@@ -16,6 +16,8 @@ import { Suscripciones } from "./component/suscripciones.jsx";
 import { Registrarse } from "./component/registrarse.jsx"
 import { InicioSesion } from "./component/inicio.jsx";
 import { Perfil } from "./component/perfil.jsx";
+import { Historial } from "./component/historial.jsx";
+import { Personal } from "./component/personales.jsx"
 
 //create your first component
 const Layout = () => {
@@ -34,6 +36,8 @@ const Layout = () => {
                         <Route element={<Registrarse />} path="/registro" />
                         <Route element={<InicioSesion />} path="/inicio" />
                         <Route element={<Perfil />} path="/perfil" />
+                        <Route element={<Historial />} path="/historial" />
+                        <Route element={<Personal />} path="/personal" />
                         <Route element={<h1>Not found!</h1>} />
                     </Routes>
                     <Footer />

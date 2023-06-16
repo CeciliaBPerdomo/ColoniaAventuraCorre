@@ -17,7 +17,9 @@ export const InicioSesion = () => {
                                 style={{ fontSize: "18px" }}>Email:</label>
                         </div>
                         <div className="col-6">
-                            <input type="text" id="inputPassword6" className="form-control" style={{ fontSize: "18px" }} />
+                            <input type="text" id="inputPassword6" className="form-control" 
+                            style={{ fontSize: "18px" }} 
+                            placeholder="javiermartinez@gmail.com"/>
                         </div>
                         <div className="col-auto">
                             <span id="passwordHelpInline" className="form-text">
@@ -33,7 +35,10 @@ export const InicioSesion = () => {
                                 style={{ fontSize: "18px" }}>Contraseña:</label>
                         </div>
                         <div className="col-6">
-                            <input type="password" id="inputPassword6" className="form-control" style={{ fontSize: "18px" }} />
+                            <input type="password" 
+                            id="inputPassword6" className="form-control" 
+                            placeholder="*******"
+                            style={{ fontSize: "18px" }} />
                         </div>
                         <div className="col-auto">
                             <span id="passwordHelpInline" className="form-text">
